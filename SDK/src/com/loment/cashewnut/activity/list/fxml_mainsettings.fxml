@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #f6f2ef;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loment.cashewnut.activity.list.MainMessageSettings">
+	<center>
+		<ScrollPane fx:id="scroll" prefViewportHeight="830.0" prefViewportWidth="666.0">
+			<content>
+				<VBox BorderPane.alignment="CENTER">
+					<children>
+						<VBox style="-fx-padding: 0 5 0 20;">
+							<children>
+								<HBox alignment="CENTER_LEFT" minHeight="43.0" prefHeight="45.0"
+									prefWidth="641.0">
+									<children>
+										<Button fx:id="aboutButton" alignment="BASELINE_LEFT"
+											graphicTextGap="0.0" mnemonicParsing="false" opacity="0.9"
+											prefHeight="31.0" prefWidth="620.0"
+											style="-fx-background-color: transparent; -fx-padding: 0;"
+											text="" textFill="#0a0000">
+											<graphic>
+												<ImageView fx:id="aboutImageView" fitHeight="22.0"
+													fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+											</graphic>
+										</Button>
+									</children>
+								</HBox>
+								<HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0"
+									minHeight="45.0" prefHeight="45.0">
+									<children>
+										<Button fx:id="reportsButton" alignment="BASELINE_LEFT"
+											graphicTextGap="0.0" mnemonicParsing="false" opacity="0.9"
+											prefHeight="33.0" prefWidth="620.0"
+											style="-fx-background-color: transparent; -fx-padding: 0;"
+											text="" textFill="#0a0000">
+											<graphic>
+												<ImageView fx:id="reportsImageView" fitHeight="22.0"
+													fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+											</graphic>
+										</Button>
+									</children>
+								</HBox>
+							</children>
+						</VBox>
+						<HBox alignment="CENTER_LEFT" minHeight="40.0" prefHeight="40.0"
+							style="-fx-background-color: #ffffff;">
+							<children>
+								<Region prefHeight="28.0" prefWidth="13.0" />
+								<Label fx:id="accountLabel" prefHeight="40.0"
+									text="Account" textFill="#ff6600">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</HBox>
+						<HBox alignment="CENTER_LEFT" minHeight="45.0" prefHeight="45.0"
+							prefWidth="616.0" style="-fx-padding: 0 5 0 20;">
+							<children>
+								<Button fx:id="changePassword" alignment="BASELINE_LEFT"
+									graphicTextGap="0.0" mnemonicParsing="false" opacity="0.9"
+									prefHeight="40.0" prefWidth="620.0"
+									style="-fx-background-color: transparent; -fx-padding: 0;"
+									text="" textFill="#0a0000">
+									<graphic>
+										<ImageView fx:id="changePasswordImageView"
+											fitHeight="22.0" fitWidth="22.0" pickOnBounds="true"
+											preserveRatio="true" />
+									</graphic>
+								</Button>
+							</children>
+						</HBox>
+						<HBox alignment="CENTER_LEFT" minHeight="40.0" prefHeight="40.0"
+							style="-fx-background-color: #ffffff;">
+							<children>
+								<Region prefHeight="28.0" prefWidth="13.0" />
+								<Label fx:id="secureandprivacyLabel" contentDisplay="CENTER"
+									minHeight="40.0" prefHeight="40.0" text=""
+									textFill="#ff6600">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</HBox>
+						<VBox style="-fx-padding: 0 5 0 20;">
+							<children>
+								<HBox alignment="CENTER_LEFT" minHeight="45.0" prefHeight="45.0"
+									prefWidth="616.0">
+									<children>
+										<Label fx:id="priorityIndicatorLabel" prefHeight="17.0"
+											text="" />
+										<ComboBox fx:id="mainSettingsPriorityComboBox"
+											prefHeight="25.0" prefWidth="106.0"
+											style="-fx-background-color: transparent;" />
+									</children>
+								</HBox>
+								<HBox minHeight="45.0" prefHeight="45.0">
+									<children>
+										<CheckBox fx:id="mainSettingsExpireCheckbox"
+											mnemonicParsing="false" prefHeight="42.0" prefWidth="89.0"
+											text="" />
+										<TextField fx:id="mainSettingsExpireTextField"
+											prefHeight="31.0" prefWidth="81.0" promptText="" />
+									</children>
+								</HBox>
+								<HBox minHeight="45.0" prefHeight="45.0" prefWidth="616.0">
+									<children>
+										<CheckBox fx:id="mianSettingsRestrictedCheckBox"
+											mnemonicParsing="false" prefHeight="33.0" 
+											text="" />
+									</children>
+								</HBox>
+								<HBox minHeight="45.0" prefHeight="45.0" prefWidth="616.0">
+									<children>
+										<CheckBox fx:id="mainSettingsAckCheckBox"
+											mnemonicParsing="false" prefHeight="33.0" prefWidth="190.0"
+											text="" />
+									</children>
+								</HBox>
+							</children>
+						</VBox>
+						<HBox alignment="CENTER_LEFT" minHeight="40.0" prefHeight="40.0"
+							style="-fx-background-color: #ffffff;">
+							<children>
+								<Region prefHeight="28.0" prefWidth="13.0" />
+								<Label fx:id="notificationSettingsLabel" contentDisplay="CENTER"
+									minHeight="40.0" prefHeight="40.0" text=""
+									textFill="#ff6600">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</HBox>
+						<HBox minHeight="45.0" prefHeight="45.0" prefWidth="616.0"
+							style="-fx-padding: 0 5 0 20;">
+							<children>
+								<CheckBox fx:id="mainSettingsPlaySoundCheckBox"
+									mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0"
+									text="" />
+							</children>
+						</HBox>
+						<HBox minHeight="45.0" prefHeight="45.0"
+							style="-fx-background-color: #ffffff;">
+							<children>
+								<Region prefHeight="28.0" prefWidth="13.0" />
+								<Label fx:id="additionalSettingsLabel" contentDisplay="CENTER"
+									maxHeight="45.0" prefHeight="45.0" prefWidth="154.0" text=""
+									textFill="#ff6600">
+									<font>
+										<Font size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</HBox>
+						<VBox style="-fx-padding: 0 5 0 20;">
+							<children>
+								<HBox minHeight="35.0" prefHeight="40.0" prefWidth="641.0">
+									<children>
+										<CheckBox fx:id="mainSettingsEnableCheckBox"
+											mnemonicParsing="false" prefHeight="40.0" prefWidth="194.0"
+											text="" />
+									</children>
+								</HBox>
+								<HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="616.0">
+									<children>
+										<Label fx:id="hibernateLabel" minHeight="35.0"
+											prefHeight="35.0" text="" />
+										<ComboBox fx:id="mainSettingsHibernateComboBox"
+											prefHeight="30.0" prefWidth="102.0"
+											style="-fx-background-color: transparent;" />
+									</children>
+								</HBox>
+								<HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="616.0">
+									<children>
+										<Label fx:id="languageLabel" minHeight="35.0"
+											prefHeight="35.0" text="" />
+										<ComboBox fx:id="mainSettingsLanguageComboBox"
+											prefHeight="30.0" prefWidth="109.0"
+											style="-fx-background-color: transparent;" />
+									</children>
+								</HBox>
+								<VBox prefHeight="126.0" prefWidth="641.0">
+									<children>
+										<Label fx:id="fontLabel" contentDisplay="TOP"
+											prefHeight="31.0" text="" />
+										<SplitPane dividerPositions="0.5" prefHeight="83.0"
+											prefWidth="634.0"
+											style="-fx-border-width: 0; -fx-border-color: transparent; -fx-padding: 0px;">
+											<items>
+												<StackPane prefHeight="95.0" prefWidth="316.0"
+													style="-fx-background-color: transparent;">
+													<children>
+														<ListView fx:id="fontListView" prefHeight="70.0"
+															prefWidth="303.0" style="-fx-background-color: transparent;" />
+													</children>
+												</StackPane>
+												<StackPane prefHeight="73.0" prefWidth="271.0"
+													style="-fx-background-color: transparent; -fx-border-width: 0;">
+													<children>
+														<Label fx:id="fontLabel" alignment="CENTER"
+															contentDisplay="CENTER" prefHeight="73.0" />
+													</children>
+												</StackPane>
+											</items>
+										</SplitPane>
+									</children>
+								</VBox>
+								<HBox alignment="CENTER_LEFT" minHeight="45.0" prefHeight="35.0"
+									prefWidth="616.0">
+									<children>
+										<CheckBox fx:id="mainSettingsAutoResponseCheckBox"
+											mnemonicParsing="false" prefHeight="30.0" prefWidth="154.0"
+											text="" />
+										<TextField fx:id="mainSettingsAutoResponseTextField"
+											minHeight="45.0" prefHeight="30.0" 
+											promptText="" />
+									</children>
+								</HBox>
+							</children>
+						</VBox>
+					</children>
+				</VBox>
+			</content>
+		</ScrollPane>
+	</center>
+	<top>
+		<HBox fx:id="rightTitleHBox" alignment="CENTER_LEFT" minHeight="43.0"
+			prefHeight="43.0"
+			style="-fx-background-color: #d7ccc8; -fx-padding: 4; -fx-border-width: 4;"
+			BorderPane.alignment="CENTER_RIGHT">
+			<children>
+				<Region prefHeight="40.0" prefWidth="3.0" />
+				<Label fx:id="titleLabel" minHeight="45.0" prefHeight="45.0"
+					text="" />
+				<Button fx:id="saveButton" mnemonicParsing="false"
+					prefHeight="24.0" prefWidth="85.0" style="-fx-background-color: transparent;">
+					<graphic>
+						<ImageView fx:id="saveButtonImage" fitHeight="32.0"
+							fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+			</children>
+		</HBox>
+	</top>
+</BorderPane>

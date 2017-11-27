@@ -1,0 +1,46 @@
+/* BACKGROUND IMAGE CSS */
+.root {
+    /*-fx-background-image: url("background2.png");*/
+}
+
+/*list item selected color */
+.list-cell:filled:selected {
+    -fx-background-color:#009999;
+    -fx-text-fill: white; 
+}
+
+#label-custom {
+    -fx-font-family: "Amble CN";
+    -fx-font-size: 11px;
+    -fx-text-fill: lightcyan;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: lcd;
+    -fx-fill: azure;
+}
+
+#button-custom {
+    -fx-background-color:transparent;
+    
+}
+
+.button:pressed {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.text-area {
+    -fx-background-color: #FFFFFF;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}

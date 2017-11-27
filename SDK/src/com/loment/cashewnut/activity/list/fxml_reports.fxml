@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane fx:id="borderPane" prefHeight="340.0" prefWidth="444.0" style="-fx-border-color: #A8A8A8; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loment.cashewnut.activity.list.Reports">
+	<center>
+		<VBox prefHeight="392.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+			<children>
+				<Region prefHeight="12.0" prefWidth="590.0" />
+				<HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" style="-fx-background-color: #a8a8a8;">
+					<children>
+						<Label fx:id="registrationDetailsLabel" prefHeight="26.0" text="" />
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="10.0" spacing="10">
+					<children>
+						<Label fx:id="lomentIDLabel" prefHeight="27.0" text="" />
+						<Label fx:id="primaryemailLabel" layoutX="10.0" layoutY="10.0" prefHeight="26.0" />
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="23.0">
+					<children>
+						
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="10.0">
+					<children>
+						<Label fx:id="userName" prefHeight="27.0" text="" />
+					</children>
+					
+					
+				</HBox>
+				
+				<AnchorPane  fx:id="EditNameAnchorPane" prefHeight="37.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+				<children>
+				
+						<Label fx:id="nameLabel" layoutY="10.0"  prefWidth="120.0"/>         
+							 <TextField fx:id="updateNameText" layoutX="10.0" layoutY="10.0" visible="false" />               
+							<Button fx:id="editNameButton" layoutX="130.0" layoutY="10.0"  visible="true" />
+							<Button fx:id="NameUpdateButton" layoutX="165.0" layoutY="10.0" text="ok" visible="false" />
+							  <ProgressIndicator fx:id="progressIndicator" layoutX="175.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" progress="0.0" />
+		<!-- 			<Button fx:id="ImageButton" layoutX="290.0"   visible="true" />  -->
+
+				</children>
+				</AnchorPane>
+				<HBox layoutX="10.0" layoutY="10.0">
+					<children>
+					 <Label fx:id="errorNameLabel" prefHeight="27.0" text="" />
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="10.0">
+					<children>
+					
+						<Label fx:id="phoneNumber" prefHeight="27.0" text="" />
+						
+					</children>
+				</HBox>
+				<AnchorPane  fx:id="EditNumberAnchorPane" prefWidth="320.0" BorderPane.alignment="CENTER">
+					<children>
+						<Label fx:id="numberLabel" layoutY="10.0" prefHeight="26.0" />
+							<ComboBox fx:id="countryCode" layoutX="10.0" layoutY="10.0" prefHeight="24.0" prefWidth="120.0" promptText="Country" />
+							<TextField fx:id="updateNumberText" layoutX="140.0" layoutY="10.0" visible="false" />
+							<Button fx:id="editNumberButton"  layoutX="130.0" layoutY="10.0"/>
+							<Button fx:id="NumberUpdateButton" layoutX="300.0" layoutY="10.0" text="ok" visible="false" />
+					</children>
+				</AnchorPane>
+				<HBox layoutX="10.0" layoutY="10.0">
+					<children>
+						<Label fx:id="errorPhonenumberLabel" prefHeight="27.0" text="" />
+					</children>
+				</HBox>
+				<Separator prefHeight="0.0" />
+				<HBox layoutX="10.0" layoutY="36.0">
+					<children>
+						<Label fx:id="cashewIDLabel1" prefHeight="27.0" text="" />
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="44.0">
+					<children>
+						<Label fx:id="cashewIdLabel" layoutX="10.0" layoutY="10.0" prefHeight="25.0" />
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="52.0">
+					<children>
+						<Label fx:id="cashewIDLabel2" layoutX="10.0" layoutY="10.0" prefHeight="25.0" text="" />
+					</children>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="10.0" prefHeight="30.0" style="-fx-background-color: #a8a8a8;">
+					<children>
+						<Label fx:id="subscriptionDetailsLabel" prefHeight="26.0" text="" />
+					</children>
+				</HBox>
+				<HBox fx:id="subscription_type_layout" layoutX="10.0" layoutY="62.0">
+					<children>
+						<Label fx:id="typeLabel" prefHeight="27.0" prefWidth="150.0" text="" />
+						<Label fx:id="subcriptionTypeLabel" layoutX="10.0" layoutY="10.0" prefHeight="26.0" text="-" />
+					</children>
+				</HBox>
+				<Separator prefHeight="0.0" />
+				<HBox layoutX="10.0" layoutY="114.0">
+					<children>
+						<Label fx:id="statusLabel" prefHeight="27.0" prefWidth="150.0" text="" />
+						<Label fx:id="subcriptionStatus" layoutX="10.0" layoutY="10.0" prefHeight="26.0" text="-" />
+					</children>
+				</HBox>
+				<Separator prefHeight="0.0" />
+				<HBox fx:id="subcriptionStartDateLayout" layoutX="10.0" layoutY="140.0">
+					<children>
+						<Label fx:id="startDateLabel" prefHeight="27.0" prefWidth="150.0" text="" />
+						<Label fx:id="subcriptionStartDate" layoutX="10.0" layoutY="10.0" prefHeight="25.0" text="-" />
+					</children>
+				</HBox>
+				<Separator prefHeight="0.0" />
+				<HBox fx:id="subcriptionEndDateLayout" layoutX="10.0" layoutY="166.0">
+					<children>
+						<Label fx:id="endDateLabel" prefHeight="27.0" prefWidth="150.0" text="" />
+						<Label fx:id="subcriptionEndDate" layoutX="10.0" layoutY="10.0" prefHeight="25.0" text="-" />
+					</children>
+				</HBox>
+				<HBox fx:id="change_subscription_lbl_layout" layoutX="10.0" layoutY="10.0" prefHeight="30.0" style="-fx-background-color: #a8a8a8;">
+					<children>
+						<Label fx:id="accountSubscriptionLabel" prefHeight="26.0" text="" />
+					</children>
+				</HBox>				
+				<HBox fx:id="change_subscription_layout" layoutX="10.0" layoutY="192.0">
+					<children>
+						<Button fx:id="accountSubscriptionButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="28.0" prefWidth="412.0" style="-fx-background-color: transparent; -fx-padding: 0;" text="" />
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</center>
+	<top>
+		<ToolBar fx:id="toolBar" style="-fx-background-color: #8F7057;">
+			<items>
+				<Button fx:id="closeButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #04B486;">
+					<graphic>
+						<ImageView fx:id="closeButtonImage" fitHeight="12.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+				<Label fx:id="titleLabel" text="" textFill="#ffffff" />
+			</items>
+		</ToolBar>
+	</top>
+	<left>
+		<Region prefHeight="392.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+	</left>
+	<right>
+		<Region prefHeight="286.0" prefWidth="11.0" BorderPane.alignment="CENTER" />
+	</right>
+</BorderPane>

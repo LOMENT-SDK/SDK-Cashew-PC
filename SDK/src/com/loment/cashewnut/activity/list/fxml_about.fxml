@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="371.0" prefWidth="445.0"
+	style="-fx-border-color: #A8A8A8; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loment.cashewnut.activity.list.About">
+	<top>
+		<ToolBar fx:id="toolBar" style="-fx-background-color: #8F7057;"
+			BorderPane.alignment="CENTER">
+			<items>
+				<Button fx:id="closeButton" maxHeight="20.0" maxWidth="20.0"
+					minHeight="20.0" minWidth="20.0" mnemonicParsing="false"
+					prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #04B486;">
+					<graphic>
+						<ImageView fx:id="closeButtonImage" fitHeight="12.0"
+							fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+				<Label fx:id="titleLabel" text="" textFill="#ffffff"/>								
+			</items>
+		</ToolBar>
+	</top>
+	<center>
+		<BorderPane prefHeight="352.0" prefWidth="433.0"
+			BorderPane.alignment="CENTER">
+			<center>
+				<VBox alignment="CENTER" prefHeight="227.0" prefWidth="390.0"
+					BorderPane.alignment="TOP_CENTER">
+					<children>
+						<HBox layoutX="102.0" layoutY="173.0" prefHeight="40.0">
+							<children>
+								<Label fx:id="versionLabel1" layoutX="102.0" layoutY="175.0" prefHeight="17.0"
+									prefWidth="150.0" text="" />
+								<Label fx:id="versionLabel" layoutX="235.0" layoutY="173.0"
+									prefHeight="15.0" />
+							</children>
+						</HBox>
+					<!-- 	<HBox layoutX="102.0" layoutY="218.0" prefHeight="40.0">
+							<children>
+								<Label fx:id="buildTImeLabel1" layoutX="102.0" layoutY="218.0" prefWidth="150.0"
+									text="" />
+								<Label fx:id="buildTImeLabel" layoutX="235.0" layoutY="221.0"
+									prefHeight="15.0" />
+							</children>
+						</HBox> -->
+						<HBox layoutX="102.0" layoutY="256.0" prefHeight="40.0">
+							<children>
+								<Label fx:id="mailidLabel1" layoutX="102.0" layoutY="256.0" prefWidth="150.0"
+									text="" />
+								<Label fx:id="mailidLabel" layoutX="235.0" layoutY="256.0"
+									text="" />
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+			</center>
+			<top>
+				<VBox alignment="CENTER" prefHeight="100.0" prefWidth="433.0">
+					<children>
+						<ImageView fx:id="cashewLogo" fitHeight="77.0" fitWidth="107.0"
+							nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true"
+							BorderPane.alignment="CENTER">
+						</ImageView>
+						<Label fx:id="logoLabel" BorderPane.alignment="CENTER" 
+					layoutX="381.0" layoutY="367.0" prefHeight="34.0" 
+					text="" >
+					
+                           </Label>
+					</children>
+				</VBox>
+			</top>
+			<left>
+				<Region prefHeight="189.0" prefWidth="99.0"
+					BorderPane.alignment="CENTER" />
+			</left>
+		</BorderPane>
+	</center>
+	<bottom>
+		<HBox prefHeight="40.0" prefWidth="433.0" BorderPane.alignment="CENTER">
+			<children>
+				<Region prefHeight="40.0" prefWidth="15.0" />
+				<ImageView fx:id="lomentLogo" fitHeight="39.0" fitWidth="25.0"
+					layoutX="37.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+
+				</ImageView>
+				<Label fx:id="lomentLogoLabel" prefHeight="34.0" prefWidth="109"
+					text="" />
+				<Label fx:id="emailIDLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT"
+					layoutX="351.0" layoutY="347.0" prefHeight="34.0" prefWidth="280.0"
+					text="" />
+				<Region layoutX="10.0" layoutY="10.0" prefHeight="40.0"
+					prefWidth="29.0" />
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

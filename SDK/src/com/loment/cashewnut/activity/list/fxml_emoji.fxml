@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="440.0" style="-fx-border-width: 4; -fx-border-color: #8F7057;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TabPane  prefHeight="400.0" prefWidth="200.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+        
+          <Tab fx:id="RecentTab"  style=" 
+    -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.05em 2.60em 0.7em 1.15em;
+    -fx-font-size: 10.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;">
+             <graphic>
+        <ImageView fx:id="recentImageView" fitHeight="30.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="RecentGrid">
+                      
+                        </GridPane>
+                        <ScrollBar fx:id="RecentScroll" layoutX="420.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="14.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="people"  style=" 
+    -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.05em 2.60em 0.7em 1.15em;
+    -fx-font-size: 10.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;">
+         <graphic>
+        <ImageView fx:id="peopleImageView" fitHeight="30.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+            <content>
+              <AnchorPane fx:id="peopleAnchor" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="200.0">
+                     <children>              
+                        <GridPane fx:id="peopleGrid">
+                        
+                        </GridPane>
+                   
+                        <ScrollBar fx:id="PeopleScroll"  layoutX="416.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="14.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="Object"  style=" 
+  -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.05em 2.60em 0.7em 1.15em;
+    -fx-font-size: 10.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;">
+         <graphic>
+        <ImageView fx:id="objectImageView" fitHeight="30.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+               <content>
+                  <AnchorPane fx:id="objectAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="ObjectGrid">
+                        </GridPane>
+                        <ScrollBar fx:id="ObjectScroll"   layoutX="416.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="14.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Nature"  style=" 
+     -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.05em 2.60em 0.7em 1.15em;
+    -fx-font-size: 10.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;">
+         <graphic>
+        <ImageView fx:id="natureImageView" fitHeight="30.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+               <content>
+                  <AnchorPane fx:id="natureAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="NatureGrid">                    
+                        </GridPane>
+                        <ScrollBar fx:id="NatureScroll"   layoutX="416.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="14.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Places"  style=" 
+     -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.05em 2.60em 0.7em 1.15em;
+    -fx-font-size: 10.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;">
+         <graphic>
+        <ImageView fx:id="placesImageView" fitHeight="30.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+               <content>
+                  <AnchorPane fx:id="placeAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="PlacesGrid">
+                      </GridPane>
+               <ScrollBar fx:id="PlacesScroll"   layoutX="416.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="14.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            
+	<Tab fx:id="Symbols"  style=" 
+     -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.05em 2.60em 0.7em 1.15em;
+    -fx-font-size: 10.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;">
+         <graphic>
+        <ImageView fx:id="symbolImageView" fitHeight="30.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+               <content>
+                  <AnchorPane fx:id="symbolAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane fx:id="SymbolGrid">
+                      </GridPane>
+               <ScrollBar fx:id="SymbolScroll"  layoutX="416.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="14.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+           
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+     <ToolBar fx:id="toolBaremoji" style="-fx-background-color: #8F7057;">
+        <items>
+          <Button fx:id="closeButtonEmoji" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #04B486;">
+							<graphic>
+								<ImageView fx:id="closeImageView" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />
+							</graphic>
+						</Button>
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

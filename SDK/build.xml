@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<project name="Cashew" basedir="." default="main">
+	<property name="libs.dir"     value="libs"/>
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="jar.dir"     value="${build.dir}/jar"/>
+<property name="bundles.dir"     value="${classes.dir}/bundles"/>
+<property name="resources.dir"     value="${classes.dir}/resources"/>
+
+    <property name="fxmlFilesInList" 
+ 
+value="src/com/loment/cashewnut/activity/list"/>
+
+    <property name="main-class" 
+ 
+value="com/loment/cashewnut/activity/controller/MainForm"/>
+
+    <property name="proguard.dir" location="proguard/proguard.jar" />
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+
+        <mkdir dir="${bundles.dir}"/>
+
+
+        <mkdir dir="${resources.dir}"/>
+
+<copy todir="${resources.dir}"> 
+<fileset dir = "${src.dir}/resources"/>   
+</copy>
+
+<copy todir="${bundles.dir}"> 
+<fileset dir = "${src.dir}/bundles"/>   
+</copy>
+
+
+
+        <javac srcdir="${src.dir}" destdir="${classes.dir}">
+ <classpath>
+        <pathelement path="libs/java-json.jar"/>
+<pathelement path="libs/jfxrt.jar"/>
+<pathelement path="libs/sqlite-jdbc-3.8.6.jar"/>
+<pathelement path="libs/rabbitmq-client.jar"/>
+<pathelement path="libs/jmf.jar"/>
+<pathelement path="libs/javafx-common.jar"/>
+<pathelement path="libs/httpmime-4.1.3.jar"/>
+<pathelement path="libs/httpcore-4.1.4.jar"/>
+<pathelement path="libs/httpclient-cache-4.1.3.jar"/>
+<pathelement path="libs/httpclient-4.1.3.jar"/>
+<pathelement path="libs/guava-14.0-rc3.jar"/>
+<pathelement path="libs/geoip-api-1.2.10.jar"/>
+<pathelement path="libs/controlsfx-8.20.9.jar"/>
+<pathelement path="libs/commons-logging-1.1.1.jar"/>
+<pathelement path="libs/commons-io-2.4.jar"/>
+<pathelement path="libs/commons-codec-1.4.jar"/>
+</classpath>
+</javac>
+
+<copy todir="${classes.dir}/com/loment/cashewnut/activity/list/">
+<fileset dir = "src/com/loment/cashewnut/activity/list/"> 
+ <include name="**/*.fxml"/> 
+<include name="**/*.css"/> 
+</fileset> 
+</copy>
+
+
+
+<copy todir="${classes.dir}/com/loment/cashewnut/activity/view/javafx/">
+<fileset dir = "src/com/loment/cashewnut/activity/view/javafx/"> 
+ <include name="**/*.fxml"/> 
+<include name="**/*.css"/> 
+<include name="**/*.csv"/> 
+</fileset> 
+</copy>
+
+
+
+ </target>
+
+<target name="run" depends="compile">
+
+<java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
+
+    </target>
+
+
+    <target name="jar" depends="run">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+ <zipgroupfileset dir="libs" includes="**/*.jar"/>
+            <manifest>
+
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+
+    
+
+<taskdef resource="proguard/ant/task.properties"
+         classpath="${proguar.dir}" />
+<proguard configuration="script/Cashew_proguard.pro"/>
+
+    <target name="clean-build" depends="clean,jar"/>
+
+    <target name="main" depends="clean,run"/>
+
+</project>

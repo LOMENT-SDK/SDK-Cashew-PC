@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="300.0" style="-fx-border-width: 4; -fx-border-color: #8F7057;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loment.cashewnut.activity.list.ForwardMessage">
+    <bottom>
+        <TabPane fx:id="forwardTabPane" blendMode="SOFT_LIGHT" layoutX="21.0" layoutY="26.0" nodeOrientation="LEFT_TO_RIGHT" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="contactsTab" styleClass="tabs" text="">
+                  
+                  
+                     <content>
+                              <AnchorPane fx:id="contactsAnchorPane" minHeight="0.0" minWidth="0.0"  styleClass="tabpanel">
+                        </AnchorPane>
+                     </content>
+                 
+                    
+                </Tab>
+                <Tab fx:id="groupsTab" styleClass="tabs" text="">
+                    <content>
+                 
+                   
+                              <AnchorPane fx:id="groupsAnchorPane" minHeight="0.0" minWidth="0.0" styleClass="tabpanel">
+                        </AnchorPane>
+                     </content>
+                  
+                    
+                </Tab>
+            </tabs>
+        </TabPane>
+    </bottom>
+    <top>
+        <ToolBar fx:id="toolBar" prefHeight="28.0" style="-fx-background-color: #8F7057;">
+            <items>
+                <HBox fx:id="toolbarButtonsHBox" alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="13.0">
+                    <children>
+                        <Button fx:id="closeButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #04B486;">
+                            <graphic>
+                                <ImageView fx:id="closeImageView" fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" />
+                            </graphic>
+                        </Button>
+                    </children>
+                </HBox>
+            </items>
+        </ToolBar>
+    </top>
+</BorderPane>

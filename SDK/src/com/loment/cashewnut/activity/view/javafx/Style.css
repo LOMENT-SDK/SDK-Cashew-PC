@@ -1,0 +1,161 @@
+/* BACKGROUND IMAGE CSS */
+root { 
+    display: block;
+}
+.root1 {
+    -fx-background-color:#F6F2EF;
+}
+.root2 {
+    /*-fx-background-image: url("background2.png");*/
+}
+
+/* BUTTON CSS */
+.button {
+    -fx-text-fill: #A48369;
+    -fx-font-family: "Arial";
+    -fx-background-color:whitesmoke;
+    -fx-background-radius: 0.0, 0.0;
+    -fx-font-size: 18.0px;
+    -fx-border-color:#A48369;
+
+}
+
+.closeButtonCss {
+    -fx-border-radius: 20.0;
+    -fx-border-width: 1.0 1.0 1.0 1.0;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.9em 0.416667em 0.9em 0.416667em;
+    -fx-radial-gradient: center 50.0% 50.0%, radius 100.0%, #ea7f4b, #c54e2c;
+}
+
+.button:pressed{
+    -fx-background-color:#ffcccc;
+}
+
+/* TEXT FIELD CSS */
+.text-field, .selectaccount {
+    -fx-background-color: #999999, #FFFFFF;
+    -fx-background-insets: 0.0, 1.0;
+    -fx-background-radius: 0.0, 0.0;
+}
+
+/* TAB CSS */
+.tabpanel {
+    -fx-background-color: #FFFFFF;
+}
+.tabs {
+    -fx-background-color:#D8CABF;
+    -fx-background-radius: 0.0, 0.0;
+    -fx-padding: 0.7em 2.65em 0.7em 2.55em;
+    -fx-font-size: 16.0px;
+    -fx-text-fill:#9c9c9c;
+    -fx-background-insets: 0.0 1.0 0.0 1.0,0.0,0.0;
+
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:110.0px;
+}
+.tab:selected {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;  
+
+}
+.tabs:active{
+    background:red;
+}
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+}
+
+/* LANGUAGE LIST CSS */
+.languagemenu {
+    -fx-background-radius: 0.0, 0.0;
+    -fx-background-color: #4d4d4d;
+    -fx-opacity: 0.6;
+
+}
+
+/* ACCOUNTS PAGE CSS */
+.accountpage {
+    -fx-border-width: 2.0px;
+    -fx-border-color: #A8A8A8;
+}
+
+.hiperLink {
+    -fx-border-width: 0.0px;
+    -fx-border-color: #A8A8A8;
+}
+.accountComboBox{
+    -fx-background-color:#8F7057;
+    -fx-text-fill:#FFFFFF;
+    -fx-border-color:#8F7057;
+}
+/* SIGNUP PAGE CSS*/
+.error{
+	-fx-font-family: "Arial";
+    -fx-text-fill:#f50e0e;
+     -fx-font-size: 12px;
+}
+
+.info{
+	-fx-font-family: "Arial";
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+.hidden{
+    visibility:hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.tab-pane {
+    -fx-border-width: 1.0px;
+    -fx-border-color: #A8A8A8;
+}
+
+
+.tab-pane .tab-header-area .tab-header-background {
+   -fx-background-color: #D8CABF;
+}
+
+
+.toolBar{
+    -fx-background-color:#8F7057;
+    -fx-text-fill:#FFFFFF;
+    -fx-border-color:#8F7057;
+    -fx-font-size: 22.0px;
+    alignment-adjust: central;
+
+}
+.comboBoxCellCss{
+    -fx-background-color:#8F7057;
+    -fx-text-fill:#FFFFFF;
+    -fx-border-color:#8F7057;
+}
+.combo-box .cell{
+    -fx-background-color:#8F7057;
+    -fx-text-fill:#FFFFFF;
+    -fx-border-color:#8F7057;
+}
+
+.textcss{
+    -fx-text-fill:#4A4A4A;
+}
+.hbox { 
+    -fx-border-color:#A8A8A8;
+    -fx-background-insets: 0.0;
+    -fx-border-width: 1.0 0.0 0.0 0.0;
+}
+
+.hboxTopNoBorder { 
+    -fx-border-color:#A8A8A8;
+    -fx-background-insets: 0.0;
+    -fx-border-width: 0.0 1.0 1.0 1.0;
+    -fx-text-box-border-top: transparent;
+}

@@ -1,0 +1,149 @@
+/* BACKGROUND IMAGE CSS */
+.root {
+    /*-fx-background-image: url("background1.jpg");*/
+    -fx-base: #F6F2EF;
+    -fx-background: #F6F2EF;
+    -fx-control-inner-background:  #F6F2EF;
+}
+
+.stackPaneRightBackground{
+    /*-fx-background-image: url("background2.png"); */ 
+}
+
+.list-cell:filled:selected {
+    -fx-background-color:#009999;
+}
+
+
+#hbox-custom_left {
+    -fx-text-alignment: center;
+    -fx-background-color:transparent;
+    -fx-padding: 1em;
+    -fx-background-size: cover
+}
+
+#hbox-custom_right {
+    -fx-text-alignment: center;
+    -fx-background-color:transparent;
+    -fx-padding: 1em;
+    -fx-background-size: cover;
+}
+
+#custom-label-title {
+    -fx-font-size: 12px;
+    -fx-text-fill: #5d4037;
+    -fx-font-weight: bold;
+    -fx-line-height: 30px;
+}
+
+#custom-label-main-title {
+    -fx-font-size: 14;
+    -fx-text-fill: #5d4037;
+    -fx-font-weight: bold;
+    -fx-line-height: 30px;
+}
+
+#custom-label-from {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-line-height: 40px;
+}
+
+#custom-label-message {
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-line-height: 40px;
+}
+
+#custom-label-time {
+    -fx-font-size: 12px;
+    -fx-font-weight: 400;
+    -fx-line-height: 40px;
+}
+
+#button-custom {
+    -fx-background-color:transparent;
+}
+
+.button:pressed {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.text-area {
+    -fx-background-color: #FFFFFF;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-border-color: transparent -fx-base transparent -fx-base;
+    -fx-background-color: transparent, derive(-fx-base,40%);
+    -fx-background-insets: 0, 0 1 0 1;
+}
+
+.split-pane > .split-pane-divider {  
+    -fx-padding: 0.05em 0.01em 0.05em 0.01em;  
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-radius: 0em;
+}
+
+.closeButtonCss {
+    -fx-border-radius: 20;
+    -fx-border-width: 1 1 1 1;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: .9em 0.416667em .9em 0.416667em;
+    -fx-radial-gradient: center 50% 50%, radius 100%, #ea7f4b, #c54e2c;
+}
+
+check-box {
+    -fx-skin: "com.sun.javafx.scene.control.skin.CheckBoxSkin";
+    -fx-label-padding: 0.0em 0.0em 0.0em 0.416667em; /* 0 0 0 5 */
+}
+
+
+.check-box .box {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 2, 2, 1, 1;
+    -fx-padding: 0.25em; /* 3 -- padding from the outside edge to the mark */
+}
+
+.check-box:focused .box {
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-background-radius: 3.4, 2, 1, 1;
+}
+
+.check-box .mark {
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em;
+    -fx-shape: "M0,4H2L3,6L6,0H8L4,8H2Z";
+}
+.check-box:indeterminate .mark {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-shape: "M0,0H8V2H0Z";
+    -fx-scale-shape: false;
+}
+
+.check-box:hover .box {
+    -fx-color: -fx-hover-base;
+}
+
+.check-box:armed .box {
+    -fx-color: -fx-pressed-base;
+}
+ 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" prefHeight="370.0" prefWidth="445.0"
+	style="-fx-border-color: #A8A8A8; -fx-border-width: 6;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loment.cashewnut.activity.list.Subscription">
+	<top>
+		<ToolBar fx:id="toolBar" style="-fx-background-color: #8F7057;"
+			BorderPane.alignment="CENTER">
+			<items>
+				<Button fx:id="closeButton" maxHeight="20.0" maxWidth="20.0"
+					minHeight="20.0" minWidth="20.0" mnemonicParsing="false"
+					prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #04B486;">
+					<graphic>
+						<ImageView fx:id="closeButtonImage" fitHeight="12.0"
+							fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+				<Label fx:id="titleLabel" text="" textFill="#ffffff"/>	
+			</items>
+		</ToolBar>
+	</top>
+	<center>
+		<BorderPane prefHeight="200.0" prefWidth="200.0"
+			BorderPane.alignment="CENTER">
+			<center>
+				<VBox prefHeight="200.0" prefWidth="100.0"
+					BorderPane.alignment="CENTER" spacing="8.0">
+					<children>
+						<Region prefHeight="16.0" prefWidth="366.0" />
+						<Label fx:id="labelText" />
+						<Region layoutX="10.0" layoutY="10.0" prefHeight="2.0"
+							prefWidth="366.0" />
+						<Label fx:id="subscribeErrorLabel"  />
+						<TextField fx:id="subscribeText" text="" />
+						<!-- <Region prefHeight="31.0" prefWidth="366.0" /> -->
+						<VBox alignment="CENTER" BorderPane.alignment="CENTER" spacing="8.0">
+							<Button fx:id="SubscribeButton" alignment="CENTER"
+								mnemonicParsing="false" text="" />
+							<ProgressIndicator fx:id="addSubscribeProgress"
+								maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+								minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0"
+								progress="0.0" />
+						</VBox>
+
+						<Region layoutX="10.0" layoutY="121.0" prefHeight="5.0"
+							prefWidth="366.0" />
+						<Label fx:id="labelText1" />
+						<!-- <Region layoutX="10.0" layoutY="50.0" prefHeight="31.0" prefWidth="366.0" 
+							/> -->
+
+						<VBox alignment="CENTER" BorderPane.alignment="CENTER">
+							<Hyperlink fx:id="clickHereButton" mnemonicParsing="false"
+								text="" />
+						</VBox>
+					</children>
+				</VBox>
+			</center>
+			<left>
+				<Region prefHeight="278.0" prefWidth="33.0"
+					BorderPane.alignment="CENTER" />
+			</left>
+			<right>
+				<Region prefHeight="326.0" prefWidth="34.0"
+					BorderPane.alignment="CENTER" />
+			</right>
+		</BorderPane>
+	</center>
+</BorderPane>
