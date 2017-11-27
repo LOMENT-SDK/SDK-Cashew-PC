@@ -1,0 +1,25 @@
+var namespace_cashew_1_1_internal_1_1_network_1_1_message_dto =
+[
+    [ "AttachmentDataDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_attachment_data_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_attachment_data_dto" ],
+    [ "AttachmentsDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_attachments_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_attachments_dto" ],
+    [ "BodySizeDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_body_size_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_body_size_dto" ],
+    [ "ClientParamsDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_client_params_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_client_params_dto" ],
+    [ "FriendRequestResponseDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_friend_request_response_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_friend_request_response_dto" ],
+    [ "FullMessageDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_full_message_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_full_message_dto" ],
+    [ "GroupConfResponseDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_group_conf_response_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_group_conf_response_dto" ],
+    [ "GrpConfDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_grp_conf_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_grp_conf_dto" ],
+    [ "HeaderMessageDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_header_message_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_header_message_dto" ],
+    [ "MessageControlParamsDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_message_control_params_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_message_control_params_dto" ],
+    [ "MessageHeaderDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_message_header_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_message_header_dto" ],
+    [ "MessageStatusDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_message_status_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_message_status_dto" ],
+    [ "MsgFullDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_msg_full_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_msg_full_dto" ],
+    [ "SendMessageBodyDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_body_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_body_dto" ],
+    [ "SendMessageClientParamsDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_client_params_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_client_params_dto" ],
+    [ "SendMessageControlParamsDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_control_params_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_control_params_dto" ],
+    [ "SendMessageDataDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_data_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_data_dto" ],
+    [ "SendMessageDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_dto" ],
+    [ "SendMessageHeaderDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_header_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_header_dto" ],
+    [ "SendMessageSubjectDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_subject_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_subject_dto" ],
+    [ "SendMessageToDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_to_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_send_message_to_dto" ],
+    [ "SubjectDto", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_subject_dto.html", "class_cashew_1_1_internal_1_1_network_1_1_message_dto_1_1_subject_dto" ]
+];

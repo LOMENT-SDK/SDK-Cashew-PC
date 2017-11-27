@@ -1,0 +1,26 @@
+var interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility =
+[
+    [ "ClearAttachments", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a49f33150d3f44ce92c56903fafa26547", null ],
+    [ "CopyFile", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a4d6c1757fde5520fa6e1e53e4c8f6d1d", null ],
+    [ "CopyFileToLocalStorage", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a672fb1bb16d76bcf22133813029c1138", null ],
+    [ "CreateCacheFileCopy", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a7608d30466af4b6bfab4e011fde549f4", null ],
+    [ "CreateDirectoryLocal", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a3517f93efc25a5df91cb4bf9a185107e", null ],
+    [ "DeleteFile", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#ac676f6d78d15af405b4e3b6b41e9cc31", null ],
+    [ "FileExist", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#ad77fc10daeaa7f0bf0235b93b5cf04ee", null ],
+    [ "GetAbsoluteFilePath", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a19c8a5d02da4a9647ac3e9a6344ad773", null ],
+    [ "GetAttachmentFilePath", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a0125968ae09bb29a4d2773af7e523536", null ],
+    [ "GetAttachmentSaveStream", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a022e488e50557b18de7aa2496574a631", null ],
+    [ "GetFileSizeInByte", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a3d118646a84cdb8f80df2fa58064c2bb", null ],
+    [ "GetPlatform", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a3e892c78d427fc4b3b2951b27a95770f", null ],
+    [ "GetVersion", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#ab9b69e1fda4b898ea24dedb9c42d20e8", null ],
+    [ "Init", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#aabc31b87b9404ed66315e4bc823cb508", null ],
+    [ "IsConnectedToInternet", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a40400e554a41150f0ab8fa67e7b9effd", null ],
+    [ "LaunchFileInExternalViewer", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a8c4b765241ef51c952de4b0b8f35ce42", null ],
+    [ "LaunchUrlInExternalBrowser", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a6529ec725a0e0039cf498c69e8487220", null ],
+    [ "ListFiles", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a3b64306d7478ae25cbf4ba5aacbe7059", null ],
+    [ "LoadFileAsync", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#ab2c8f964bb0622f51d0d9e08554ce04c", null ],
+    [ "PickFile", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#a379ca11b9cc467b9c4aadc2b75e56f83", null ],
+    [ "RestartApplication", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#ac1c528fce7aa753417715c2b3a56a1c7", null ],
+    [ "WriteCacheFile", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#ab81028f08745f457e003c9281aa9bddd", null ],
+    [ "LocalStorageFullPath", "interface_cashew_1_1_utility_1_1_services_1_1_i_platform_utility.html#aa6937737e2f79e9e5e4ce1e7ee1120c8", null ]
+];

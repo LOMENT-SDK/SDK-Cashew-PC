@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="WpfCashew.RegisterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfCashew"
+              DataContext="{Binding LomentAccount, Source={StaticResource Locator}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="438.696" d:DesignWidth="545.502" Margin="-4,0,0,0">
+    <Grid>
+
+        <StackPanel  x:Name="registerContainer" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" >
+
+            <Label Content="Name" Margin="-4,4,0,0"/>
+            <TextBox Text="{Binding RegisterViewModel.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Content="Email" Margin="-4,4,0,0"/>
+            <TextBox Text="{Binding RegisterViewModel.Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Content="Phone" Margin="-4,4,0,0"/>
+            <TextBox Text="{Binding RegisterViewModel.Phone, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label Content="Country Code" Margin="-4,4,0,0"/>
+            <TextBox Text="{Binding RegisterViewModel.CountryCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Label  Content="Password" Margin="-4,4,0,0"/>
+            <TextBox Text="{Binding RegisterViewModel.Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  />
+
+            <Button Content="Register" Margin="0,24,0,0" Command="{Binding RegisterViewModel.Register}" />
+
+            <TextBlock Text="{Binding RegisterViewModel.Message}" Margin="0,20,0,0" />
+
+        </StackPanel>
+    </Grid>
+</UserControl>

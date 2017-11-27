@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B2634B2-7313-4096-AC12-D26F2F49EC73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cashew</RootNamespace>
+    <AssemblyName>Cashew</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TESTSERVER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\Cashew.Utility\Cashew.Utility.csproj">
+      <Project>{a3c5d2c3-d91c-430f-9ee8-6289d9d4e094}</Project>
+      <Name>Cashew.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Internal\Network\AttachmentManager.cs" />
+    <Compile Include="Internal\Network\AttachmentWebService.cs" />
+    <Compile Include="Internal\Encryption\Crypter.cs" />
+    <Compile Include="Internal\Encryption\Crypto.cs" />
+    <Compile Include="Internal\Network\AutoRecoveryQueueBase.cs" />
+    <Compile Include="Internal\Network\MessageDto\FriendRequestResponseDto.cs" />
+    <Compile Include="Model\CNAttachmentDownloadInfo.cs" />
+    <Compile Include="Services\CryptoException.cs" />
+    <Compile Include="Services\IDataCrypter.cs" />
+    <Compile Include="Internal\Encryption\DefaultDataCrypter.cs" />
+    <Compile Include="Internal\Encryption\EncryptionKey.cs" />
+    <Compile Include="Internal\Encryption\IKey.cs" />
+    <Compile Include="Internal\Encryption\KeyGeneration.cs" />
+    <Compile Include="Internal\Encryption\MessageKey.cs" />
+    <Compile Include="Internal\Encryption\PairwiseKey.cs" />
+    <Compile Include="Internal\Encryption\Sha256Crypter.cs" />
+    <Compile Include="Internal\Loment\APICrypter.cs" />
+    <Compile Include="Internal\Loment\APIKeyManager.cs" />
+    <Compile Include="Internal\Loment\Dto\CashewAccountCreateDto.cs" />
+    <Compile Include="Internal\Loment\Dto\CashewAccountDto.cs" />
+    <Compile Include="Internal\Loment\Dto\CashewAccountsDto.cs" />
+    <Compile Include="Internal\Loment\Dto\LomentAccountDto.cs" />
+    <Compile Include="Internal\Loment\Dto\RegistrationResponse.cs" />
+    <Compile Include="Internal\Loment\Dto\ResponseDtoBase.cs" />
+    <Compile Include="Internal\Loment\Dto\SubscriptionDetailsDto.cs" />
+    <Compile Include="Internal\Loment\Dto\SubscriptionDto.cs" />
+    <Compile Include="Internal\Loment\Extensions\JsonConvertExtensions.cs" />
+    <Compile Include="Internal\Loment\LomentApi.cs" />
+    <Compile Include="Internal\Loment\Dto\ResponseMeta.cs" />
+    <Compile Include="Internal\Loment\Dto\ResponseUtil.cs" />
+    <Compile Include="Internal\Loment\Dto\UpdateTimeDto.cs" />
+    <Compile Include="Internal\Network\AmpqManager.cs" />
+    <Compile Include="Internal\Network\MessageDto\FullMessageDto.cs" />
+    <Compile Include="Internal\Network\MessageDto\GroupConfResponseDto.cs" />
+    <Compile Include="Internal\Network\MessageDto\IncomingFriendRequestDto.cs" />
+    <Compile Include="Internal\Network\MessageDto\MessageDtoType.cs" />
+    <Compile Include="Internal\Network\MessageDto\SendMessageDto.cs" />
+    <Compile Include="Internal\Network\MessageDto\SubjectDto.cs" />
+    <Compile Include="Internal\Network\MessageQueue.cs" />
+    <Compile Include="Internal\Network\MessageRequest.cs" />
+    <Compile Include="Internal\Network\MessageRequestType.cs" />
+    <Compile Include="Internal\Network\NetworkConstants.cs" />
+    <Compile Include="Internal\Network\NetworkHelper.cs" />
+    <Compile Include="Internal\Network\RequestQueue.cs" />
+    <Compile Include="Internal\Network\ResponseBroker.cs" />
+    <Compile Include="Internal\Network\ResponseHandler.cs" />
+    <Compile Include="Internal\Network\ResponseQueue.cs" />
+    <Compile Include="ApiException.cs" />
+    <Compile Include="Model\CNAttachmentData.cs" />
+    <Compile Include="Model\CNFriendRequest.cs" />
+    <Compile Include="Model\CNGroup.cs" />
+    <Compile Include="Model\CNMessageBase.cs" />
+    <Compile Include="Model\CNMessageDirection.cs" />
+    <Compile Include="Model\CNMessageOptions.cs" />
+    <Compile Include="Model\NetworkResponses\AuthenticationResponse.cs" />
+    <Compile Include="MessagingService.cs" />
+    <Compile Include="Model\CNAttachment.cs" />
+    <Compile Include="Model\CNCashewAccount.cs" />
+    <Compile Include="Model\NetworkResponses\CashewResponse.cs" />
+    <Compile Include="Model\CNFriendStatus.cs" />
+    <Compile Include="Model\CNMessage.cs" />
+    <Compile Include="Internal\Network\MessageOptions.cs" />
+    <Compile Include="Model\CNMessagePriority.cs" />
+    <Compile Include="Model\CNFriendSuggestion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sdk.cs" />
+    <Compile Include="Model\CNLomentAccount.cs" />
+    <Compile Include="Services\DeviceType.cs" />
+    <Compile Include="Services\IDeviceInformationProvider.cs" />
+    <Compile Include="Services\IRabbitMQService.cs" />
+    <Compile Include="Services\MessageReceivedEventArgs.cs" />
+    <Compile Include="LomentService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.1.3\lib\portable-net40+sl5+win8+wp8+wpa81\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doxyfile" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Walnut.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
